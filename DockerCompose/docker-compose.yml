@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  mon_service:
+    build:
+      context: .
+    container_name: mon_conteneur_personnalise
+    image: mon_image_personnalisee
+    command: /usr/local/bin/my_script.sh
+    restart: unless-stopped
+    tty: true
+
+  nginx:
+    image: nginx:latest
+    container_name: mon_nginx
+    ports:
+      - "8080:80"  # Mappe le port 8080 de l'hôte au port 80 du conteneur
+    restart: unless-stopped

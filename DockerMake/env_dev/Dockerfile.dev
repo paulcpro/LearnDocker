@@ -1,0 +1,26 @@
+# Utiliser une image de base Ubuntu
+FROM ubuntu:20.04
+
+# Définir l'éditeur de variables d'environnement
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Installer les outils nécessaires pour le développement (g++, make, etc.)
+RUN apt-get update && \
+    apt-get install -y g++ make vim git && \
+    apt-get clean
+
+# Définir le répertoire de travail
+WORKDIR /app
+
+# Copier le code source du projet dans le conteneur
+COPY . .
+
+# Exposer le port (si nécessaire, par exemple pour un serveur web)
+# EXPOSE 8080
+
+# Commande par défaut : lancer make pour compiler le projet
+CMD ["make"]
+
+
+# docker build -f Dockerfile.dev -t mon_projet_dev .
+# docker run --rm -v $(pwd)/mon_projet_cplusplus:/app mon_projet_dev

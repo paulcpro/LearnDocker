@@ -1,0 +1,24 @@
+#distrib
+FROM ubuntu:20.04
+
+#Maj des paquets pour la distribution (dépendances globales)
+RUN apt-get update
+
+#Emplacement où mettre l'executable
+COPY . /the/workdir/path
+
+#Lancement de la compilation projet
+RUN make
+
+#exécution du programme via ./Test
+CMD ["./Test"]
+
+
+# Commande pour construire l'image Docker à partir du dossier actuel depuis un Dockerfile spécifique
+# docker build -f Dockerfile.env -t myimg .
+
+# Commande pour lancer instancier le conteneur depuis l'image
+# docker run --rm myimg
+
+# Commande pour lancer instancier le conteneur depuis l'image et ouvrir un terminal
+# docker run --rm -it myimg /bin/bash ou /bin/sh
