@@ -17,8 +17,6 @@ CMD ["./Test"]
 # Commande pour construire l'image Docker à partir du dossier actuel depuis un Dockerfile spécifique
 # docker build -f Dockerfile.env -t myimg .
 
-# Commande pour lancer instancier le conteneur depuis l'image
-# docker run --rm myimg
-
 # Commande pour lancer instancier le conteneur depuis l'image et ouvrir un terminal
-# docker run --rm -it myimg /bin/bash ou /bin/sh
+# docker run --rm -it myimg
+
