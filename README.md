@@ -2,9 +2,9 @@
 
 | Plugin | README |
 | ------ | ------ |
-| DockerInteractif | [DockerInteractif/README.md] |
-| DockerCompose | [DockerCompose/README.md] |
-| DockerMake | [DockerMake/README.md] |
-| DockerWebApp | [DockerWebApp/README.md] |
-| DockerBasics01 | [DockerBasics01/README.md] |
-| DockerBasics02 | [DockerBasics02/README.md] |
+| DockerInteractif | [https://github.com/paulcpro/LearnDocker/tree/main/DockerInteractif] |
+| DockerCompose | [https://github.com/paulcpro/LearnDocker/tree/main/DockerCompose] |
+| DockerMake | [https://github.com/paulcpro/LearnDocker/tree/main/DockerMake] |
+| DockerWebApp | [https://github.com/paulcpro/LearnDocker/tree/main/DockerWebApp] |
+| DockerBasics01 | [https://github.com/paulcpro/LearnDocker/tree/main/DockerBasics01] |
+| DockerBasics02 | [https://github.com/paulcpro/LearnDocker/tree/main/DockerBasics02] |

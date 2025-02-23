@@ -1,20 +1,11 @@
-# Utiliser une image de base légère (comme Alpine ou Debian slim)
 FROM ubuntu:20.04
 
-# Installer uniquement les dépendances nécessaires à l'exécution
 RUN apt-get update && \
     apt-get install -y libstdc++6 && \
     apt-get clean
 
-# Définir le répertoire de travail
 WORKDIR /app
 
-# Copier uniquement l'exécutable (depuis la phase de build ou ton répertoire local)
 COPY build/ .
 
-# Exécuter l'exécutable
 CMD ["./app"]
-
-
-# docker build -f Dockerfile.prod -t mon_projet_prod .
-# docker run --rm mon_projet_prod

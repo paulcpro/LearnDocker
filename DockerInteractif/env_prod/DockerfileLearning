@@ -13,6 +13,8 @@ RUN make
 #exécution du programme via ./Test
 CMD ["./Test"]
 
+# docker build -f Dockerfile.prod -t mon_projet_prod .
+# docker run --rm mon_projet_prod
 
 # Commande pour construire l'image Docker à partir du dossier actuel depuis un Dockerfile spécifique
 # docker build -f Dockerfile.env -t myimg .
