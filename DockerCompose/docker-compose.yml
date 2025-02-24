@@ -4,8 +4,8 @@ services:
   mon_service:
     build:
       context: .
-    container_name: mon_conteneur_personnalise
-    image: mon_image_personnalisee
+    container_name: compose_container
+    image: mon_image
     command: /usr/local/bin/my_script.sh
     restart: unless-stopped
     tty: true

@@ -1,22 +1,5 @@
 # Dockerfile Interactive
 
-## Program Image
-```sh
-FROM
-RUN
-WORKDIR
-VOLUME
-COPY 
-ENTRYPOINT
-```
-- FROM : Permet de récupérer une image ubuntu dans notre cas sur DockerHub
-- RUN : Permet d'installer les différentes dépendances pour l'image ubuntu
-- WORKDIR : Permet de créer un répertoire de travail où on y placera notre code
-- VOLUME : Partage d'un répertoire entre l'hôte et le conteneur de manière persistante
-- COPY : Copie le code depuis l'hôte vers le répertoire de travail
-- ENTRYPOINT : Définition du point d'entrée par défaut, ici "bash" pour intéragir avec le conteneur
-
-
 ## Commands to use the programmed Image
 ## Build Image
 ```sh

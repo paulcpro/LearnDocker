@@ -1,0 +1,4 @@
+*.code-workspace
+DockerInteractif/env_dev/build
+DockerInteractif/env_prod/build
+DockerMake/env_prod/build
